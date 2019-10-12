@@ -1,0 +1,68 @@
+<view>
+      <view class='calendar_title '>
+        <view class='{{ isShow ? "iconhide" : ""}}' bindtap='lastMonth'>
+          <image src='/images/last.png' />
+        </view>
+        <view class="calendar_yearmonth">
+          <view >{{year}}年{{month}}月</view>
+        </view>
+        <view class='{{ isShow ? "" :"iconhide"}}' bindtap='nextMonth'>
+          <image src='/images/next.png' />
+        </view>
+      </view>
+
+    <!-- 日历主体 -->
+    <view class='calendar'>
+      <view class='header'>
+        <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>
+          {{item}}
+          <view></view>
+        </view>
+      </view>
+
+        <view class='date_box'>
+            <view wx:for='{{dateArr}}' wx:key=''>
+                  <view class='{{isToday == item.isToday ? "nowDay" : ""}}'>
+                      <view class='date_head' 
+                            bindtap='lookHuoDong' 
+                            data-year='{{year}}' 
+                            data-month='{{month}}' 
+                            data-datenum='{{item.dateNum}}'
+                            data-appoint='{{item.appoint}}'
+                      >
+                            <view  class='{{item.appoint> 34 ? "isbusy" : ""}}'>
+                                {{item.dateNum}}
+                            </view>
+                            <view class="{{item.dateNum?'appoint':''}}">
+                                    <view>
+                                        {{item.appoint}}
+                                    </view>
+                            </view>
+                      </view>
+                  </view>
+            </view>
+      </view>
+    </view>
+
+       <view class="i_menu">
+          <navigator url="/pages/appointRecord/appointRecord"
+                  class="i_navigator"
+                  open-type="navigate" 
+                  hover-class="other-navigator-hover">
+                  <view class="i_icon"> 
+                      <image src='/images/appoint.png' />
+                  </view>
+                  <view class="i_label">
+                    <view class="i_h1">
+                      我的预约
+                    </view>
+                    <view class="i_h2">
+                      近5次预约记录
+                    </view>
+                  </view>
+                  <view class="i_text">
+                    <image src='/images/to-right32.png' />
+                  </view>
+          </navigator>
+      </view>
+</view>

@@ -1,0 +1,80 @@
+/* pages/userList/userList.wxss */
+page {
+  width: 100%;
+}
+.i-row {
+  padding: 0 20rpx;
+  font-family: Cursive;
+  font-size:  40rpx;
+}
+.i-top {
+  padding: 0 20rpx;
+  font-family: Cursive;
+  font-size:  40rpx;
+  background-color: #179b16
+}
+.i-top image {
+  padding: .2em .2em;
+  width: 1.2em;
+  height: 1.2em;
+}
+.i-search {
+  border:solid 2px #FFD700;
+  border-radius: 20rpx;
+}
+input {
+  margin: auto;
+  width: 70%;
+}
+.i-top .i-text {
+  padding: .2em .2em;
+}
+.i-text {
+  margin: 30rpx auto;
+  padding: .5em .5em;
+  border:solid 2px #FFD700;
+  border-radius: 20rpx;
+  display: flex;
+  display: -webkit-flex;
+  background: #fff;
+}
+.i-record {
+  margin: 30rpx auto;
+  padding: 1em 1em;
+  border:solid 2px #FFD700;
+  border-radius: 20rpx;
+  background: #fff;
+}
+.i-item {
+  margin: 1em auto;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.i-row .i-record image {
+  margin-right: 10rpx;
+  width: 1em;
+  height: 1em;
+}
+
+.i-last {
+  margin-left: 1em;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* flex中不被压缩的项目 */
+.i-fixed {
+  flex-shrink: 0;
+}
+.primaryBtn{
+  padding: 0 20rpx;
+  width: 100%;
+}
+
+.i-nodata {
+  font-family: Cursive;
+  font-size:  80rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}

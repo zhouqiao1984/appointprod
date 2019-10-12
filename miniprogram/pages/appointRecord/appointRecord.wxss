@@ -1,0 +1,80 @@
+/* pages/recordAppoint/recordAppoint.wxss */
+page {
+  width: 100%;
+}
+.i-row {
+  padding: 0 20rpx;
+  font-family: Cursive;
+  font-size:  40rpx;
+}
+
+.i-nodata {
+  font-family: Cursive;
+  font-size:  80rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.i-due {
+  border:solid 2px #bfbfbf;
+  margin: 30rpx auto;
+  padding: .1em 1em;
+  border-radius: 20rpx;
+  background: #fff;
+  color: #8a8a8a;
+}
+.i-record {
+  margin: 30rpx auto;
+  padding: .1em 1em;
+  border:solid 2px #FFD700;
+  border-radius: 20rpx;
+  background: #fff;
+}
+.i-item {
+  margin: 1em auto;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.i-row .i-record image, .i-row .i-due image{
+  margin-right: 10rpx;
+  width: 1em;
+  height: 1em;
+}
+
+.i-last {
+  margin-left: 1em;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* flex中不被压缩的项目 */
+.i-fixed {
+  flex-shrink: 0;
+}
+
+.i-option {
+  justify-content: space-around;
+  /* justify-content: center; */
+  color: #fff;
+}
+
+.i-del {
+  width: 5em;
+  height: 2em;
+  background-color: #7CCD7C;
+  border-radius:20rpx;
+  display: flex;
+  justify-content:center;
+}
+.i-change {
+  width: 7em;
+  height: 2em;
+  background-color: #87CEFA;
+  border-radius:20rpx;
+  display: flex;
+  justify-content:center;
+}
+.i-del view, .i-change view{
+  align-self: center;
+}
